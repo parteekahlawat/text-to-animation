@@ -8,11 +8,11 @@ const HomeNavbar = () => {
         <div className='flex items-center md:px-20 md:py-8 fixed w-full'>
           <img src={logo} alt="logo" className='cursor-pointer' />
           <div className='flex w-full '> {/* Add hidden here for mobile devices */}
-            <div className='flex gap-10 ml-10'>
+            <div className='flex md:gap-10 md:ml-10 ml-1 gap-4'>
               <button className='text-xl font-semibold opacity-90 text-black-400 hover:underline underline-offset-4 '>Pricing</button>
               <button className='text-xl font-semibold opacity-90 text-black-400 hover:underline underline-offset-4 '>FAQ</button>
             </div>
-            <div className='ml-auto mr-4 flex gap-10'>
+            <div className='ml-auto mr-4 flex md:gap-10 gap-4'>
               <button className='text-xl font-semibold opacity-90 text-black-400 hover:underline underline-offset-4 '>Log in</button>
               <Button text='get started' />
             </div>
