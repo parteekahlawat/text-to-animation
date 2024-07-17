@@ -4,6 +4,7 @@ import maskGrid from '../assets/images/grid_mask2.jpg'
 import Hero from '../components/Hero'
 import Section1 from '../components/Section1'
 import Section2 from '../components/Section2'
+// import Testimonial from '../components/Testimonial'      START FROM HERE TMR
 
 const Homepage = () => {
   return (
@@ -15,6 +16,7 @@ const Homepage = () => {
         </div>
           <Hero />
           <Section1 />
+          {/* <Testimonial /> */}
           <Section2 />
       </div>
     </>
