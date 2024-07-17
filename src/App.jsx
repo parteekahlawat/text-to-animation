@@ -1,11 +1,12 @@
 import Homepage from "./pages/Homepage";
-import Space from "./pages/Space";
+// import Space from "./pages/Space";
 
 function App() {
  
   return (
     <>
-      <Space />
+      {/* <Space /> */}
+      <Homepage />
     </>
   )
 }
