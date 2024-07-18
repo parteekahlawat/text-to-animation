@@ -5,7 +5,7 @@ import Button from './Button'
 const HomeNavbar = () => {
   return (
     <nav>
-        <div className='flex items-center md:px-20 md:py-8 fixed w-full'>
+        <div className='flex items-center md:px-10 md:py-10 fixed w-full'>
           <img src={logo} alt="logo" className='cursor-pointer' />
           <div className='flex w-full '> {/* Add hidden here for mobile devices */}
             <div className='flex md:gap-10 md:ml-10 ml-1 gap-4'>
