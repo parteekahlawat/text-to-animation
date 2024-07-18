@@ -6,7 +6,7 @@ const HomeNavbar = () => {
   return (
     <nav>
         <div className='flex items-center md:px-10 md:py-10 fixed w-full'>
-          <img src={logo} alt="logo" className='cursor-pointer' />
+          <img src={logo} alt="logo" className='cursor-pointer w-[80px] md:w-auto' />
           <div className='flex w-full '> {/* Add hidden here for mobile devices */}
             <div className='flex md:gap-10 md:ml-10 ml-1 gap-4'>
               <button className='text-xl font-semibold opacity-90 text-black-400 hover:underline underline-offset-4 '>Pricing</button>
