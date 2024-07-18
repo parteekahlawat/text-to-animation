@@ -18,7 +18,7 @@ const QnA = () => {
                 </div>
                 {selectedIndex === qa.id && 
                 (
-                    <div className='w-full flex items-center justify-between my-2'>
+                    <div className='animate-linUp2 w-full flex items-center justify-between my-2'>
                         <p className='text-lg md:text-xl font-semibold  text-gray-700'>{qa.answer}</p>
                     </div>
                 )}
