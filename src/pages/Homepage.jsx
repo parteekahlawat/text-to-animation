@@ -15,12 +15,12 @@ import icon4 from '../assets/images/random4.webp'
 import icon5 from '../assets/images/random5.webp'
 import icon6 from '../assets/images/random6.webp'
 
-
+// Just Footer left and the hamburger menu for mobile devices
 
 const Homepage = () => {
   return (
     <>
-      <div className='w-fit'>
+      <div className='w-fit '>
         <div className='relative w-full h-[55vh] object-cover bg-gradient-to-b from-transparent to-white '>
           <img src={maskGrid} className=' w-full h-full object-cover absolute z-[-1]'/>
           <img src={icon1} className='absolute w-[60px] md:w-[80px] h-[auto] lg:w-[100px] xl:w-auto top-[10%] right-[30%]' />
