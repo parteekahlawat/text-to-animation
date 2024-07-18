@@ -12,7 +12,7 @@ const HomeNavbar = () => {
               <button className='text-xl font-semibold opacity-90 text-black-400 hover:underline underline-offset-4 '>Pricing</button>
               <button className='text-xl font-semibold opacity-90 text-black-400 hover:underline underline-offset-4 '>FAQ</button>
             </div>
-            <div className='ml-auto mr-4 flex md:gap-10 gap-4'>
+            <div className='ml-auto md:mr-4 mr-6 flex md:gap-8 gap-8'>
               <button className='text-xl font-semibold opacity-90 text-black-400 hover:underline underline-offset-4 '>Log in</button>
               <Button text='get started' />
             </div>
