@@ -23,12 +23,12 @@ const Homepage = () => {
       <div className='w-fit'>
         <div className='relative w-full h-[55vh] object-cover bg-gradient-to-b from-transparent to-white '>
           <img src={maskGrid} className=' w-full h-full object-cover absolute z-[-1]'/>
-          <img src={icon1} className='absolute top-[10%] right-[30%]' />
-          <img src={icon2} className='absolute top-[40%] left-[30%]'  />
-          <img src={icon3} className='absolute bottom-[20%] right-[10%]' />
-          <img src={icon4} className='absolute bottom-[10%] right-[80%]' />
-          <img src={icon5} className='absolute bottom-[45%] right-[45%]' />
-          <img src={icon6} className='absolute top-[25%] left-[15%]' />
+          <img src={icon1} className='absolute w-[60px] md:w-[80px] h-[auto] lg:w-[100px] xl:w-auto top-[10%] right-[30%]' />
+          <img src={icon2} className='absolute w-[60px] md:w-[80px] h-[auto] lg:w-[100px] xl:w-auto top-[40%] left-[30%]'  />
+          <img src={icon3} className='absolute w-[60px] md:w-[80px] h-[auto] lg:w-[100px] xl:w-auto bottom-[20%] right-[10%]' />
+          <img src={icon4} className='absolute w-[60px] md:w-[80px] h-[auto] lg:w-[100px] xl:w-auto bottom-[10%] right-[80%]' />
+          <img src={icon5} className='absolute w-[60px] md:w-[80px] h-[auto] lg:w-[100px] xl:w-auto bottom-[45%] right-[45%]' />
+          <img src={icon6} className='absolute w-[60px] md:w-[80px] h-[auto] lg:w-[100px] xl:w-auto top-[25%] left-[15%]' />
           <HomeNavbar />
         </div>
           <Hero />
