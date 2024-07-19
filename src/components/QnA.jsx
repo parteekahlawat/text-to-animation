@@ -14,12 +14,12 @@ const QnA = () => {
           return (
             <div key={index} className='w-[90%] mx-auto my-4 pb-3 pl-4 border-b-2 border-gray-200'>
                 <div className='w-full flex items-center justify-between mb-1'>
-                    <p className='text-lg md:text-xl font-semibold  text-gray-700 hover:underline cursor-pointer' onClick={() => handleClick(qa)}>{qa.question} </p>
+                    <p className='text-lg md:text-xl font-semibold  text-black hover:underline underline-offset-4 cursor-pointer' onClick={() => handleClick(qa)}>{qa.question} </p>
                 </div>
                 {selectedIndex === qa.id && 
                 (
                     <div className='animate-linUp2 w-full flex items-center justify-between my-2'>
-                        <p className='text-lg md:text-xl font-semibold  text-gray-700'>{qa.answer}</p>
+                        <p className='text-lg md:text-xl font-medium text-slate-700'>{qa.answer}</p>
                     </div>
                 )}
             </div>
