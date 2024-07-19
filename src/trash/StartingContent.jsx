@@ -1,5 +1,5 @@
 import React from 'react'
-import SpaceCards from './SpaceCards'
+import SpaceCards from '../components/SpaceCards'
 import blackAriplane from '../assets/images/black_airplane_doodle.png'
 
 const StartingContent = () => {
