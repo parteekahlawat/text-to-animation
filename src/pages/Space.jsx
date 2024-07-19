@@ -4,8 +4,9 @@ import blackAirplane from '../assets/images/black_airplane_doodle.png'
 import { FaUser, FaRegIdBadge, FaPlusSquare, FaEnvelope } from "react-icons/fa"
 
 const Space = () => {
-
+  
   const[input,setInput] = useState('');
+  const[initialFlag,setInitialFlag] = useState(true);  
 
   const handleChange = (e) => {
     setInput(e.target.value);
@@ -16,6 +17,7 @@ const Space = () => {
     e.preventDefault();
     console.log(input);
     setInput('');
+    setInitialFlag(false);
   }
 
   const handleClick = (e) => {
@@ -24,7 +26,7 @@ const Space = () => {
   }
 
   return (
-    <div>
+    <div >
       {/* <Navbar /> */}
       <nav className="flex-1 flex items-center justify-between m-2 md:m-4 xl:m-6 px-2 py-1">
         <p className="text-sm md:text-lg xl:text-xl text-gray-500 cursor-pointer hover:underline hover:text-black hover:scale-105 underline-offset-2">User's Space
@@ -38,7 +40,10 @@ const Space = () => {
       </nav>
 
       {/* <Initail Content /> */}
-      <div className="mt-[1rem] md:mt-[2rem]  lg:mt-[4rem]  md:max-w-[60%] mx-auto rounded-3xl flex flex-col items-center justify-center ">
+
+      {initialFlag
+       ? (
+        <div className="mt-[1rem] md:mt-[2rem]  lg:mt-[4rem]  md:max-w-[60%] mx-auto rounded-3xl flex flex-col items-center justify-center ">
         <img src={blackAirplane} className='w-[150px] md:w-[180px] xl:w-[250px] h-auto object-cover ' />
         <h1 className='text-black font-semibold text-xl md:text-3xl lg:text-4xl xl:text-[4rem] xl:leading-[4rem]  m-1 xl:mb-10  text-center my-1 xl:text-lg md:my-2'>What do you want to learn today?</h1>
         <div className='w-[50%] md:w-[80%] grid grid-cols-1 md:grid-cols-3 gap-2 xl:gap-4 my-2 place-items-center flex items-stretch'>
@@ -56,6 +61,16 @@ const Space = () => {
           </div>
         </div>
       </div>
+        )
+
+        : (
+          // add the input and results to this div
+
+            <div id='resultsDiv' className='-z-50 w-[85%] h-[80vh] md:w-8/12 mx-auto bg-red-200 overflow-y-scroll'> 
+              
+            </div>
+        )
+      }
 
       { /* <Inputbar /> */   }
       <div className='absolute bottom-[2rem] w-full flex items-center justify-center'>
