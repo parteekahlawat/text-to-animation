@@ -6,7 +6,8 @@ import Section1 from '../components/Section1'
 import Section2 from '../components/Section2'
 import Section3 from '../components/Section3'
 import Testimonial from '../components/Testimonial'   
-import FAQs from '../components/FAQs'   
+import FAQs from '../components/FAQs'  
+import Footer from '../components/Footer' 
 
 import icon1 from '../assets/images/random1.webp'
 import icon2 from '../assets/images/random2.webp'
@@ -37,6 +38,7 @@ const Homepage = () => {
           <Section2 />
           <Section3 />
           <FAQs />
+          <Footer />
       </div>
     </>
 
