@@ -45,7 +45,7 @@ const Space = () => {
        ? (
         <div className="mt-[1rem] md:mt-[2rem]  lg:mt-[4rem]  md:max-w-[60%] mx-auto rounded-3xl flex flex-col items-center justify-center ">
         <img src={blackAirplane} className='w-[150px] md:w-[180px] xl:w-[250px] h-auto object-cover ' />
-        <h1 className='text-black font-semibold text-xl md:text-3xl lg:text-4xl xl:text-[4rem] xl:leading-[4rem]  m-1 xl:mb-10  text-center my-1 xl:text-lg md:my-2'>What do you want to learn today?</h1>
+        <h1 className='text-black font-semibold text-xl md:text-3xl lg:text-4xl xl:text-[4rem] xl:leading-[4rem]  m-1 xl:mb-10  text-center my-1 md:my-2'>What do you want to learn today?</h1>
         <div className='w-[50%] md:w-[80%] grid grid-cols-1 md:grid-cols-3 gap-2 xl:gap-4 my-2 place-items-center flex items-stretch'>
           <div onClick={(e) => handleClick(e)} className='p-2 lg:px-3  xl:px-4 lg:text-lg rounded-3xl m-1 border-[4px] border-gray-200 flex md:flex-col items-center justify-center cursor-pointer hover:bg-gray-200 '>
             <FaRegIdBadge className=' mt-1 md:w-4 md:mb-2 lg:w-6 lg:mb-4 h-auto '/>
